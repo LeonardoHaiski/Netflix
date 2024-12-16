@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* importação da fonte */
+
+body{
+    background-color: black; /* COR DE FUNDO */
+    margin: 0; /* MARGEM */
+    padding: 0; /* ESPAÇAMENTO ENTRE ITENS */
+    font-family: "Montserrat", sans-serif; /* fonte */
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.img-topo{
+     height: 25px; /* ALTURA */
+     margin-top: 10px;
+}
+
+ul {
+    height: 25px; /* ALTURA */
+    display: flex; /* ITENS UM AO LADO DO OUTRO */
+    width: 95%; /* LARGURA */
+    justify-content: space-between; /* ESPAÇAMENTO */
+    list-style-type: none; /* TIRAR A BOLINHA DA LISTA */
+    position: fixed; /* FIXA A POSIÇÃO DA LISTA */
+}
+
+video{
+    width: 100vw; /* LARGURA - 100% DA TELA */
+    min-height: 80vh; /* ALTURA - 80% DA TELA */
+}
+
+.capa{
+    position: absolute; 
+    bottom: 35%; /* baixo */
+    left: 5%; /* esquerda */
+    width: 35%;
+    z-index: 3;
+}
+.capa-titulo{
+    color: white;
+    font-size: 80px; /* tamanho da fonte */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.capa-descricao{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.link-assistir{
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* espaçamento interno */
+    border-radius: 4px; /* arredondar a borda */
+    cursor: pointer; /* mãozinha */
+}
+
+.link-info{
+    background-color: rgba(255, 255, 255, 0.35);
+    color: black;
+    padding: 10px 20px; /* espaçamento interno */
+    border-radius: 4px; /* arredondar a borda */
+    cursor: pointer; /* mãozinha */
+}
+
+.imagem-carrossel{
+height: 200px;
+bottom: 0px;
+margin-left: 50px;
+margin-inline: 0px;
+}
+
+#carouselExampleControls{
+    background-color: transparent;
+    position: absolute;
+    bottom: 10%;
+    left: 50px;
+    width: 100vw; /* LARGURA - 100% DA TELA */
+}
+
+.carousel-control-prev{
+    left: -120px;
+}
+
+.carousel-item{
+    margin-left: 120px;
+}
+
+.titulo-carrossel{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.botao-somOn{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    bottom: 500px;
+    right: 50px;
+    display: none;
+}
+
+.botao-somOff{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    bottom: 500px;
+    right: 55px;
+    display: block;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo{
+    background-color: #181818;
+    margin: 30% auto;
+    padding: 20px;
+    width: 60%;
+    color: white;
+    margin-top: 100px;
+}
